@@ -1,0 +1,488 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEasy | Online Shopping</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">ShopEasy</a>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search products..."
+            >
+            <button type="button">Search</button>
+        </div>
+
+        <a href="cart.html" class="cart-link" id="cart-count">
+            Cart (0)
+        </a>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Discover Your Everyday Essentials</h1>
+
+            <p>
+                Shop electronics, fashion, and accessories
+                at affordable prices.
+            </p>
+
+            <a href="#products" class="hero-btn">
+                Shop Now
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORY SECTION -->
+
+    <section class="categories">
+
+        <h2>Shop by Category</h2>
+
+        <div class="category-buttons">
+
+            <button class="category-btn active"
+                data-category="All">
+                All Products
+            </button>
+
+            <button class="category-btn"
+                data-category="Electronics">
+                Electronics
+            </button>
+
+            <button class="category-btn"
+                data-category="Fashion">
+                Fashion
+            </button>
+
+            <button class="category-btn"
+                data-category="Accessories">
+                Accessories
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS SECTION -->
+
+    <section class="products-section" id="products">
+
+        <div class="section-heading">
+            <h2>Featured Products</h2>
+        </div>
+
+        <div class="product-grid" id="product-grid">
+
+            <!-- PRODUCT 1 -->
+
+            <div class="product-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600"
+                    alt="Wireless Headphones"
+                    class="product-image"
+                >
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Electronics
+                    </span>
+
+                    <h3>Wireless Headphones</h3>
+
+                    <p class="product-description">
+                        Premium wireless headphones with clear sound
+                        and comfortable ear cushions.
+                    </p>
+
+                    <div class="product-price">₹2,499</div>
+
+                    <div class="product-buttons">
+
+                        <button class="view-btn" data-id="1">
+                            View Details
+                        </button>
+
+                        <button class="add-cart-btn" data-id="1">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600"
+                    alt="Smart Watch"
+                    class="product-image"
+                >
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Electronics
+                    </span>
+
+                    <h3>Smart Watch</h3>
+
+                    <p class="product-description">
+                        Stylish smartwatch with fitness tracking
+                        and smart notifications.
+                    </p>
+
+                    <div class="product-price">₹3,999</div>
+
+                    <div class="product-buttons">
+
+                        <button class="view-btn" data-id="2">
+                            View Details
+                        </button>
+
+                        <button class="add-cart-btn" data-id="2">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="product-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600"
+                    alt="Running Shoes"
+                    class="product-image"
+                >
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Fashion
+                    </span>
+
+                    <h3>Running Shoes</h3>
+
+                    <p class="product-description">
+                        Lightweight and comfortable running shoes
+                        for workouts and everyday use.
+                    </p>
+
+                    <div class="product-price">₹1,999</div>
+
+                    <div class="product-buttons">
+
+                        <button class="view-btn" data-id="3">
+                            View Details
+                        </button>
+
+                        <button class="add-cart-btn" data-id="3">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+
+            <div class="product-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600"
+                    alt="Classic Backpack"
+                    class="product-image"
+                >
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Accessories
+                    </span>
+
+                    <h3>Classic Backpack</h3>
+
+                    <p class="product-description">
+                        Durable backpack with spacious compartments
+                        for college and travel.
+                    </p>
+
+                    <div class="product-price">₹1,499</div>
+
+                    <div class="product-buttons">
+
+                        <button class="view-btn" data-id="4">
+                            View Details
+                        </button>
+
+                        <button class="add-cart-btn" data-id="4">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- PRODUCT 5 -->
+
+            <div class="product-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600"
+                    alt="Modern Sunglasses"
+                    class="product-image"
+                >
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Accessories
+                    </span>
+
+                    <h3>Modern Sunglasses</h3>
+
+                    <p class="product-description">
+                        Trendy sunglasses with a stylish frame
+                        for outdoor use.
+                    </p>
+
+                    <div class="product-price">₹999</div>
+
+                    <div class="product-buttons">
+
+                        <button class="view-btn" data-id="5">
+                            View Details
+                        </button>
+
+                        <button class="add-cart-btn" data-id="5">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- PRODUCT 6 -->
+
+            <div class="product-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600"
+                    alt="Bluetooth Speaker"
+                    class="product-image"
+                >
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Electronics
+                    </span>
+
+                    <h3>Bluetooth Speaker</h3>
+
+                    <p class="product-description">
+                        Portable Bluetooth speaker with powerful
+                        audio and compact design.
+                    </p>
+
+                    <div class="product-price">₹1,799</div>
+
+                    <div class="product-buttons">
+
+                        <button class="view-btn" data-id="6">
+                            View Details
+                        </button>
+
+                        <button class="add-cart-btn" data-id="6">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- PRODUCT 7 -->
+
+            <div class="product-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600"
+                    alt="Casual T-Shirt"
+                    class="product-image"
+                >
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Fashion
+                    </span>
+
+                    <h3>Casual T-Shirt</h3>
+
+                    <p class="product-description">
+                        Comfortable casual T-shirt suitable
+                        for everyday wear.
+                    </p>
+
+                    <div class="product-price">₹799</div>
+
+                    <div class="product-buttons">
+
+                        <button class="view-btn" data-id="7">
+                            View Details
+                        </button>
+
+                        <button class="add-cart-btn" data-id="7">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- PRODUCT 8 -->
+
+            <div class="product-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600"
+                    alt="Digital Camera"
+                    class="product-image"
+                >
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Electronics
+                    </span>
+
+                    <h3>Digital Camera</h3>
+
+                    <p class="product-description">
+                        Compact digital camera to capture
+                        memorable moments.
+                    </p>
+
+                    <div class="product-price">₹12,999</div>
+
+                    <div class="product-buttons">
+
+                        <button class="view-btn" data-id="8">
+                            View Details
+                        </button>
+
+                        <button class="add-cart-btn" data-id="8">
+                            Add to Cart
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <p id="no-products" class="no-products"
+            style="display: none;">
+            No products found.
+        </p>
+
+    </section>
+
+
+    <!-- PRODUCT DETAILS MODAL -->
+
+    <div class="modal" id="product-modal">
+
+        <div class="modal-content">
+
+            <button
+                class="close-modal"
+                id="close-modal">
+                &times;
+            </button>
+
+            <img id="modal-image" src="" alt="Product">
+
+            <div class="modal-details">
+
+                <h2 id="modal-title"></h2>
+
+                <p id="modal-description"></p>
+
+                <div class="modal-price" id="modal-price"></div>
+
+                <button
+                    class="add-cart-btn"
+                    id="modal-add-cart">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p>© 2026 ShopEasy. All rights reserved.</p>
+
+        <p>Your one-stop destination for everyday shopping.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
